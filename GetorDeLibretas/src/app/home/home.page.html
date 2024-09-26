@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+ 
+  <app-menu></app-menu>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="container">
+
+ <app-buton-add-libreta></app-buton-add-libreta>
+  <div class="libretas_container">
+
+ 
+ <button class="scroll-btn left" (click)="scrollLeft()" [class.hidden]="!showScrollLeft">
+   &#10094;
+ </button>
+
+
+   <div class="cards-wrapper" #cardsWrapper>
+   <app-card-libreta class="libreta-card" *ngFor="let lib of libretas "
+     [imageUrl]="apiUrl+lib.imgUrl" 
+     [title]="lib.nombre" 
+     [subtitle]="lib.nombre">
+   </app-card-libreta>
+ 
+
+   
+
+   
+ </div>
+
+ <!-- Botón de desplazamiento a la derecha -->
+ <button class="scroll-btn right" (click)="scrollRight()" [class.hidden]="!showScrollRight">
+   &#10095;
+ </button>
+
+</div>
+</ion-content>

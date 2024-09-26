@@ -1,0 +1,51 @@
+.libretas_container {
+  position: relative;
+  transform: translateY(10%);
+}
+.libreta-card {
+  transition: transform 0.3s ease-in-out;
+  margin: 20px;
+  border-radius: 5px;
+  min-width: 250px; // Puedes ajustar este tamaño según tus necesidades
+  max-width: 300px;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+.cards-wrapper {
+  display: flex;
+  overflow-x: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 15%;
+  
+  width: 40px;
+  height: 300px;
+  background-color: rgba(128, 128, 128, 0.5);
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(75, 75, 75, 0.7);
+  }
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

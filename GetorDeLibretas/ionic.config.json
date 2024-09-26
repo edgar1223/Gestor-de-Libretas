@@ -1,0 +1,7 @@
+{
+  "name": "GetorDeLibretas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

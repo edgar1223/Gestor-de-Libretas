@@ -1,0 +1,21 @@
+.btn_add {
+    color: white; 
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    
+  
+    align-items: center;
+    
+    ion-icon {
+      margin-right: 8px; 
+      font-size: 20px; 
+    }
+  
+  
+  
+    &:active {
+      background-color: #265ac1; 
+    }
+  }
+  

@@ -1,0 +1,23 @@
+nav {
+    background-color: #1f2937; // Equivalente a bg-gray-800 en Tailwind
+    padding: 1rem;
+  
+    ul {
+      display: flex;
+      gap: 1rem;
+  
+      li {
+        list-style: none;
+  
+        a {
+          color: #fff;
+          text-decoration: none;
+  
+          &:hover {
+            color: #9ca3af; // Equivalente a hover:text-gray-400
+          }
+        }
+      }
+    }
+  }
+  
